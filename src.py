@@ -42,6 +42,10 @@ while runner:
                 print("|" + " " + pl7 + " " + pl8 + " " + pl9 + " " + "|")
                 print("---------")
                 #runner = False
+                if switcher == "X":
+                    switcher = "O"
+                elif switcher == "O":
+                    switcher = "X"  
             elif int(coord[0]) == 1 and int(coord[1]) == 2 and pl2 != "X" and pl2 != "O":
                 pl2 = switcher
                 print("---------")
@@ -50,6 +54,10 @@ while runner:
                 print("|" + " " + pl7 + " " + pl8 + " " + pl9 + " " + "|")
                 print("---------")
                 #runner = False
+                if switcher == "X":
+                    switcher = "O"
+                elif switcher == "O":
+                    switcher = "X"
             elif int(coord[0]) == 1 and int(coord[1]) == 3 and pl3 != "X" and pl3 != "O":
                 pl3 = switcher
                 print("---------")
@@ -58,6 +66,10 @@ while runner:
                 print("|" + " " + pl7 + " " + pl8 + " " + pl9 + " " + "|")
                 print("---------")
                 #runner = False
+                if switcher == "X":
+                    switcher = "O"
+                elif switcher == "O":
+                    switcher = "X"
             elif int(coord[0]) == 2 and int(coord[1]) == 1 and pl4 != "X" and pl4 != "O":
                 pl4 = switcher
                 print("---------")
@@ -66,6 +78,10 @@ while runner:
                 print("|" + " " + pl7 + " " + pl8 + " " + pl9 + " " + "|")
                 print("---------")
                 #runner = False
+                if switcher == "X":
+                    switcher = "O"
+                elif switcher == "O":
+                    switcher = "X"
             elif int(coord[0]) == 2 and int(coord[1]) == 2 and pl5 != "X" and pl5 != "O":
                 pl5 = switcher
                 print("---------")
@@ -74,6 +90,10 @@ while runner:
                 print("|" + " " + pl7 + " " + pl8 + " " + pl9 + " " + "|")
                 print("---------")
                 #runner = False
+                if switcher == "X":
+                    switcher = "O"
+                elif switcher == "O":
+                    switcher = "X"
             elif int(coord[0]) == 2 and int(coord[1]) == 3 and pl6 != "X" and pl6 != "O":
                 pl6 = switcher
                 print("---------")
@@ -82,6 +102,10 @@ while runner:
                 print("|" + " " + pl7 + " " + pl8 + " " + pl9 + " " + "|")
                 print("---------")
                 #runner = False
+                if switcher == "X":
+                    switcher = "O"
+                elif switcher == "O":
+                    switcher = "X"
             elif int(coord[0]) == 3 and int(coord[1]) == 1 and pl7 != "X" and pl7 != "O":
                 pl7 = switcher
                 print("---------")
@@ -90,6 +114,10 @@ while runner:
                 print("|" + " " + pl7 + " " + pl8 + " " + pl9 + " " + "|")
                 print("---------")
                 #runner = False
+                if switcher == "X":
+                    switcher = "O"
+                elif switcher == "O":
+                    switcher = "X"
             elif int(coord[0]) == 3 and int(coord[1]) == 2 and pl8 != "X" and pl8 != "O":
                 pl8 = switcher
                 print("---------")
@@ -98,6 +126,10 @@ while runner:
                 print("|" + " " + pl7 + " " + pl8 + " " + pl9 + " " + "|")
                 print("---------")
                 #runner = False
+                if switcher == "X":
+                    switcher = "O"
+                elif switcher == "O":
+                    switcher = "X"
             elif int(coord[0]) == 3 and int(coord[1]) == 3 and pl9 != "X" and pl9 != "O":
                 pl9 = switcher
                 print("---------")
@@ -106,14 +138,16 @@ while runner:
                 print("|" + " " + pl7 + " " + pl8 + " " + pl9 + " " + "|")
                 print("---------")
                 #runner = False
+                if switcher == "X":
+                    switcher = "O"
+                elif switcher == "O":
+                    switcher = "X"
+                
             else:
                 print("This cell is occupied! Choose another one!")
 
 
-    if switcher == "X":
-        switcher = "O"
-    elif switcher == "O":
-        switcher = "X"        
+          
 
 
     row1 = [pl1,pl2,pl3]
